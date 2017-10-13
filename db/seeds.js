@@ -25,7 +25,8 @@ const theTownReview1 = new Review({
 
 const titanic = new Movie({
   title: 'Titanic',
-  description: "Two passengers fall in love on the ill fated ship."
+  description: "Two passengers fall in love on the ill fated ship.",
+  reviews: [titanicReview1]
 })
 const americanHistoryX = new Movie({
   title: 'American History X',
@@ -35,7 +36,8 @@ const americanHistoryX = new Movie({
 
 const theTown = new Movie({
     title: 'The Town',
-    description: "Doug MacRay leads a gang of bank robbers in Boston."
+    description: "Doug MacRay leads a gang of bank robbers in Boston.",
+    reviews: [theTownReview1]
   })
 
 const jasonVoorhees = new User({

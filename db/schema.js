@@ -2,8 +2,9 @@ const mongoose = require('mongoose')
 
 
 const reviewSchema = mongoose.Schema({
-    reviewTitle: String,
-    date: String, // For mock log-in. Do not enter actual passwords
+    title: String,
+    tagline: String, 
+    review: String
 })
 
 const movieSchema = mongoose.Schema({
