@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI); 
 
-var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
