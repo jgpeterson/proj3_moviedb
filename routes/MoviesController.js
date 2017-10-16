@@ -5,19 +5,20 @@ const { Movie } = require('../db/schema')
 
 router.get('/', async (req, res) => {
   try {
-    const Movies = await Movie.find({})
-    res.json(users)
+    const movies = await Movie.find({})
+    res.json(movies)
   } catch (err) {
     res.send(err)
   }
 })
 
-router.get('/:id', async (res, req) => {
+router.get('/:id', async (req, res) => {
   try {
+      console.log(req.params.id)
     const movie = await Movie.findById(req.params.id)
     res.json(movie)
   } catch (err) {
-    res.send(err)
+    res.json(err)
   }
 })
 

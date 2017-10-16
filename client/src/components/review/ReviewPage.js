@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
+
 import axios from 'axios'
 import styled from 'styled-components'
 
 
 class ReviewPage extends Component {
     state={
-        review: {
+        movie: {
             title: '',
             tagline: '',
-            review: []
+            reviews: []
         }
+
+        
     }
 
     async componentWillMount () {
-        const { reviewId } = this.props.match.params
-        const res = await axios.get(`/api/movies/${reviewId}`)
+        const { movieId } = this.props.match.params
+        const res = await axios.get(`/api/movies/${movieId}`)
         console.log(res.data)
         this.setState({movie: res.data})
     }
@@ -22,7 +25,7 @@ class ReviewPage extends Component {
     render() {
         return (
             <div>
-              <h1>{this.state.movie.movieNames}'s Movie Review'</h1> 
+              <h1>{this.state.movie.title}'s Movie Review'</h1> 
               {this.state.movie.reviews.map((review) => {
             return (
                 <div key={review._id}>

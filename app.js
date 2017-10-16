@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI); 
 
 var users = require('./routes/UsersController');
+var MoviesController = require('./routes/MoviesController');
 var app = express();
 
 // uncomment after placing your favicon in /public
@@ -20,6 +21,7 @@ app.use(cookieParser());
 app.use(express.static(`${__dirname}/client/build`))
 
 app.use('/api/users', users);
+app.use('/api/movies', MoviesController);
 app.get('/', (req,res) => {
   res.sendFile(__dirname + '/client/build/index.html')
 })
@@ -41,7 +43,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
 
 
 module.exports = app;
