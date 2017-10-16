@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (res, req) => {
   try {
     const movie = await Movie.findById(req.params.id)
-    res.json(user)
+    res.json(movie)
   } catch (err) {
     res.send(err)
   }
@@ -23,7 +23,7 @@ router.get('/:id', async (res, req) => {
 
 router.post('/', async (req, res) => {
   try {
-    const newMovie = new Movie(req.body.user)
+    const newMovie = new Movie(req.body.movie)
     const saved = await newMovie.save()
     res.json(saved)
   } catch (err) {

@@ -13,17 +13,17 @@ class ReviewPage extends Component {
     }
 
     async componentWillMount () {
-        const { userId } = this.props.match.params
+        const { reviewId } = this.props.match.params
         const res = await axios.get(`/api/movies/${reviewId}`)
         console.log(res.data)
-        this.setState({user: res.data})
+        this.setState({movie: res.data})
     }
 
     render() {
         return (
             <div>
-              <h1>{this.state.user.userNames}'s Movie Review'</h1> 
-              {this.state.user.reviews.map((review) => {
+              <h1>{this.state.movie.movieNames}'s Movie Review'</h1> 
+              {this.state.movie.reviews.map((review) => {
             return (
                 <div key={review._id}>
                  <h3>{review.title}</h3>

@@ -2,10 +2,10 @@ const express = require('express')
 const router = express.Router({mergeParams: true})
 const { Movie, Review } = require('../db/schema')
 
-const movie = await Movie.findById(req.params.userId)
-movie.reviews.push(newReview)
-const saved = await movie.save
-res.json(saved)
+// const movie = await Movie.findById(req.params.userId)
+// movie.reviews.push(newReview)
+// const saved = await movie.save
+// res.json(saved)
 
 
 router.patch('/:id', async (req, res) => {

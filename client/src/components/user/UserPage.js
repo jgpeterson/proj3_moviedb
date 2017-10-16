@@ -23,7 +23,7 @@ class UserPage extends Component {
                <h1>Log-In</h1>
                <h3>Type in Your UserName</h3>
                {this.state.users.map(user => {
-                   return (<Link to={`/review/${user._id}`}>{user.userName}</Link>)
+                   return (<Link to={`/user/${user._id}`}>{user.userName}</Link>)
                })} 
                <CreateNewUserForm />
             </div>
