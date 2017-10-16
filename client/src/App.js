@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import HomePage from './components/home/HomePage'
+import ReviewPage from './components/review/ReviewPage'
+import UserPage from './components/user/UserPage'
 import logo from './logo.svg';
 import './App.css';
 
