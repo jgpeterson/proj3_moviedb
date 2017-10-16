@@ -20,6 +20,7 @@ const titanicReview1 = new Review({
 const theTownReview1 = new Review({
     title: 'The Town movie review',
     tagline: 'Welcome To The Bank Robbery Capital Of America.',
+    poster: 'https://i.imgur.com/Ebu87Lz.jpg',
     review: 'Ben Affleck and Jeremy Renner turn in the role of a lifetime.'
 })
 
@@ -37,6 +38,7 @@ const americanHistoryX = new Movie({
 const theTown = new Movie({
     title: 'The Town',
     description: "Doug MacRay leads a gang of bank robbers in Boston.",
+    poster: "https://i.imgur.com/Ebu87Lz.jpg",
     reviews: [theTownReview1]
   })
 
@@ -52,4 +54,5 @@ Movie.remove({})
     .then(() => titanic.save())
     .then(() => theTown.save())
     .then(() => americanHistoryX.save())
+    .then(() => console.log('Movie Saved'))
     .then(() => mongoose.connection.close())

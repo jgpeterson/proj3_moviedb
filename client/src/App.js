@@ -7,19 +7,20 @@ import UserPage from './components/user/UserPage'
 import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
         <div>
-        <div>
+        <div class="tabs">
           <Link to="/">Home</Link>
         </div>
-        <div>
+        <div class="tabs">
           <Link to="/user">UserPage</Link>
         </div>
-        <div>
+        <div class="tabs">
         <Link to="/movies">Movies</Link>
         </div>
         </div>

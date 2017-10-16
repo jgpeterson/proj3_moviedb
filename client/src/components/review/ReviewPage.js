@@ -9,6 +9,7 @@ class ReviewPage extends Component {
         movie: {
             title: '',
             tagline: '',
+            poster: '',
             reviews: []
         }
 
@@ -31,6 +32,7 @@ class ReviewPage extends Component {
                 <div key={review._id}>
                  <h3>{review.title}</h3>
                  <h4>{review.tagline}</h4>
+                 <img src={review.poster}/>
                  <p>{review.review}</p>
               </div>
             )

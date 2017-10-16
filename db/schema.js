@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const reviewSchema = mongoose.Schema({
     title: String,
     tagline: String, 
+    poster: String,
     review: String
 })
 
