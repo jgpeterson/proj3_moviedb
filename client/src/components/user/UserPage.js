@@ -17,16 +17,27 @@ class UserPage extends Component {
         this.setState({users: res.data})
     }
 
+    deleteUser = async (userId) => {        
+        const res = await axios.delete(`/api/users/${userId}`)
+        this.setState({user: res.data})
+      }
+
     render() {
         return (
             <div>
-               <h1>Log-In</h1>
-               <h3>Type in Your UserName</h3>
-               {this.state.users.map(user => {
-                   return (<Link to={`/user/${user._id}`}>{user.userName}</Link>)
+               <h1>Previous-Users</h1>
+               {this.state.users.map((user) => {
+                   return (
+                    <div>
+                        <Link to={`/user/${user._id}`}>{user.userName}</Link>
+                        <button onClick={() => this.deleteUser(user._id)}>DeleteUser</button>
+                        
+                    </div>
+               
+                   )
                })} 
                <CreateNewUserForm />
-            </div>
+               </div>
         );
     }
 }
