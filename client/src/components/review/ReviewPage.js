@@ -14,7 +14,7 @@ class ReviewPage extends Component {
 
     async componentWillMount () {
         const { userId } = this.props.match.params
-        const res = await axios.get(`/api/users/${userId}`)
+        const res = await axios.get(`/api/movies/${reviewId}`)
         console.log(res.data)
         this.setState({user: res.data})
     }

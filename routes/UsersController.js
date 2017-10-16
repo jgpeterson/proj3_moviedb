@@ -31,4 +31,15 @@ router.post('/', async (req, res) => {
   }
 })
 
+router.delete('/:id', async (req, res) => {
+  // Find the user
+  const user = await User.findById(req.params.userId)
+  // Find the specific idea and remove it from the array
+  user.ideas.id(req.params.id).remove()
+  // Save the updated user
+  const saved = await user.save()
+  // Send the user object
+  res.json(saved)
+})
+
 module.exports = router
