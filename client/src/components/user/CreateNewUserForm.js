@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
 
 const FlexContainer = styled.div`
 color: white;
@@ -54,6 +56,8 @@ handleSubmit = async (event) => {
             </div>
             </form>
             </div>
+            <Link to="/">Home</Link>
+
         </FlexContainer>
         );
     }

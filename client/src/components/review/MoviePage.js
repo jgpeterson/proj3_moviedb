@@ -43,7 +43,6 @@ componentWillMount(){
             })}
         </FlexContainer>
         </div>
-       
             )
         }
     }
