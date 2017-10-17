@@ -3,13 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-image: url("https://i.imgur.com/p1RBjra.jpg");
-  color: red;
+  color: white;
 }
 
 
- .welcome {
+ .hi {
   display: flex;
   justify-content: center;
+  color: white;
+
 }
 
 .list {
@@ -24,4 +26,5 @@ body {
 .newuser {
   color: black;
 }
+
 

@@ -3,6 +3,15 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import styled from 'styled-components'
 
+const FlexContainer = styled.div`
+display: flex;
+justify-content: space-around;
+`
+const ReviewDiv =styled.div `
+    margin-left: 300px;
+    font-weight: bolder;
+    font-size: 20px;
+`
 
 class ReviewPage extends Component {
     state={
@@ -29,11 +38,15 @@ class ReviewPage extends Component {
               <h1>{this.state.movie.title}</h1> 
               {this.state.movie.reviews.map((review) => {
             return (
+                <FlexContainer>
                 <div key={review._id}>
                  <h4>{review.tagline}</h4>
                  <img src={review.poster}/>
-                 <p>{review.review}</p>
-              </div>
+                 </div>
+                 <ReviewDiv>
+                 <p class="review">{review.review}</p>
+              </ReviewDiv>
+              </FlexContainer>
             )
             })}
             </div>
