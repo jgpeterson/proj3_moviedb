@@ -26,7 +26,7 @@ class UserPage extends Component {
 
     deleteUser = async (userId) => {        
         const res = await axios.delete(`/api/users/${userId}`)
-        this.setState({user: res.data})
+        this.setState({users: res.data})
       }
 
     render() {
@@ -36,7 +36,7 @@ class UserPage extends Component {
                <h1>Previous-Users</h1>
                {this.state.users.map((user) => {
                    return (
-                    <div class="username">
+                    <div className="username">
                         <Link to={`/user/${user._id}`}>{user.userName}</Link>
                         <button onClick={() => this.deleteUser(user._id)}>Delete User</button>
                         

@@ -34,8 +34,9 @@ router.post('/', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   // Find the user
   const user = await User.findByIdAndRemove(req.params.id)
+  const users = await User.find()
   // Send the user object
-  res.json("deleted")
+  res.json(users)
 })
 
 

@@ -27,7 +27,7 @@ class CreateNewUserForm extends Component {
 
 
 handleSubmit = async (event) => {
-
+    
     const res = await axios.post('/api/users', {
         "user": this.state.newUser
     })
