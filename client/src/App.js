@@ -6,21 +6,24 @@ import ReviewPage from './components/review/ReviewPage'
 import UserPage from './components/user/UserPage'
 import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components'
+
 
 
 class App extends Component {
   render() {
     return (
+     
       <Router>
         <div>
-        <div>
-        <div class="tabs">
+        <div class="container">
+        <div class="item">
           <Link to="/">Home</Link>
         </div>
-        <div class="tabs">
+        <div class="item">
           <Link to="/user">UserPage</Link>
         </div>
-        <div class="tabs">
+        <div class="item">
         <Link to="/movies">Movies</Link>
         </div>
         </div>

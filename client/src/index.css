@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   color: white;
+  padding: 30px;
 
 }
 
@@ -26,5 +27,20 @@ body {
 .newuser {
   color: black;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 
