@@ -20,3 +20,11 @@ body {
   justify-content: center;
   float: center;
 }
+
+.category{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin: 5px;
+}

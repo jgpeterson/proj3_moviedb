@@ -25,10 +25,10 @@ componentWillMount(){
 
     render() {
             return (
-                <div>
+                <div class="container">
                 {<h1>{this.state.movie.title}</h1>}
         {this.state.movie.map((movie) => {
-         return (<div><Link key={movie._id} to={`/movies/${movie._id}/review`}><img src={movie.title}/></Link></div>)
+         return (<div class="category"><Link key={movie._id} to={`/movies/${movie._id}/review`}><img src={movie.title}/></Link></div>)
             })}
         </div>
             )
