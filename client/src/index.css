@@ -6,10 +6,6 @@ body {
   color: white;
 }
 
-.tabs {
-  display: flex;
-  justify-content: center;
-}
 
  .welcome {
   display: flex;
@@ -21,10 +17,3 @@ body {
   float: center;
 }
 
-.category{
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: #ccc;
-  margin: 5px;
-}
