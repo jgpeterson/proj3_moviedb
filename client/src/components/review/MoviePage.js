@@ -34,21 +34,16 @@ componentWillMount(){
 
     render() {
             return (
-                <div class="container">
+            <div>
                 {<h1>{this.state.movie.title}</h1>}
-         <div class="container-fluid">
-        <div class="row">
-        <div class="col-sm-12 text-center bg-green">
-        <img class="img-responsive text-center" />
+         
         <FlexContainer>
         {this.state.movie.map((movie) => {
          return (<div><Link key={movie._id} to={`/movies/${movie._id}/review`}><img src={movie.title}/></Link></div>)
             })}
         </FlexContainer>
         </div>
-        </div>
-        </div>
-        </div>
+       
             )
         }
     }

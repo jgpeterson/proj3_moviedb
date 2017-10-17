@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import CreateNewUserForm from './CreateNewUserForm'
+import styled from 'styled-components'
+
+const FlexContainer = styled.div`
+color: white;
+
+
+`
 
 class UserPage extends Component {
     state = {
@@ -24,11 +31,12 @@ class UserPage extends Component {
 
     render() {
         return (
+        <FlexContainer>
             <div>
                <h1>Previous-Users</h1>
                {this.state.users.map((user) => {
                    return (
-                    <div>
+                    <div class="username">
                         <Link to={`/user/${user._id}`}>{user.userName}</Link>
                         <button onClick={() => this.deleteUser(user._id)}>DeleteUser</button>
                         
@@ -38,6 +46,7 @@ class UserPage extends Component {
                })} 
                <CreateNewUserForm />
                </div>
+            </FlexContainer>
         );
     }
 }
