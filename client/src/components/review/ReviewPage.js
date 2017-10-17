@@ -16,8 +16,6 @@ const ReviewDiv =styled.div `
 const ScreenshotImg = styled.img`
        float: right;
 `   
-
-
 class ReviewPage extends Component {
     state={
         movie: {

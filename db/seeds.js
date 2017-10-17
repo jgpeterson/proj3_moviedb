@@ -37,6 +37,7 @@ const theTownReview1 = new Review({
     tagline: 'Welcome To The Bank Robbery Capital Of America.',
     poster: 'https://i.imgur.com/Ebu87Lz.jpg',
     purchase: 'https://www.amazon.com/Town-Ben-Affleck/dp/B002ZG99N6/ref=sr_1_2?ie=UTF8&qid=1508257696&sr=8-2&keywords=the+town',
+    screenshot: "https://i.imgur.com/5jIkcJK.jpg",
     review: "If a film can bring us to this point and make us feel anxiety, it has done something right. 'The Town', Affleck's second film as a director, wants to do something more, to make a biographical and even philosophical statement about the culture of crime, but it doesn't do that as successfully. Here is a well-made crime procedural, and audiences are likely to enjoy it at that level, but perhaps the mechanics of movie crime got in the way of Affleck's higher ambitions. 'The Town' shows, as his first film 'Gone Baby Gone' (2007) did, that Affleck has the stuff of a real director. Everything is here. It's an effective thriller, he works closely with actors, he has a feel for pacing. Yet I persist in finding chases and gun battles curiously boring. I realize the characters have stopped making the decisions, and the stunt and effects artists have taken over."
 })
 
