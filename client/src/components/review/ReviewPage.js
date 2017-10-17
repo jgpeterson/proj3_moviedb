@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const FlexContainer = styled.div`
 display: flex;
 justify-content: space-around;
+padding: 40px;
 `
 const ReviewDiv =styled.div `
     margin-left: 300px;
@@ -38,7 +39,6 @@ class ReviewPage extends Component {
     render() {
         return (
             <div>
-              {/* <h1>{this.state.movie.title}</h1>  */}
               {this.state.movie.reviews.map((review) => {
             return (
                 <FlexContainer>
