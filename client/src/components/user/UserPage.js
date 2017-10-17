@@ -33,7 +33,7 @@ class UserPage extends Component {
         return (
         <FlexContainer>
             <div>
-               <h1>Previous-Users</h1>
+               <h1>Previous Users</h1>
                {this.state.users.map((user) => {
                    return (
                     <div className="username">
