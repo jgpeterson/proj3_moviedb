@@ -8,13 +8,23 @@ const { User, Movie, Review} = require('./schema')
 const americanHistoryXReview1 = new Review({
     title: 'American History X movie review',
     tagline: 'Some Legacies Must End.',
+    poster: 'https://i.imgur.com/piCxWTp.jpg',
     review: 'Edward Norton gives a blistering and memorable performance.'
 })
 
 const titanicReview1 = new Review({
     title: 'Titanic movie review',
     tagline: 'Nothing On Earth Could Come Between Them.',
+    poster: 'https://i.imgur.com/Ug53wZq.jpg',
     review: 'The role of Leonardo Dicaprios career.'
+})
+
+const theTexasChainsawMassacreReview1 = new Review ({
+    title: 'The Texas Chainsaw Massacre',
+    tagline: "What you know about fear doesnt come close to this.",
+    poster: "https://i.imgur.com/dMeIjLx.jpg",
+    review: 'This movie changed my life.'
+
 })
 
 const theTownReview1 = new Review({
@@ -33,6 +43,12 @@ const americanHistoryX = new Movie({
   title: 'American History X',
   description: "An older brother tries to stop his younger brother from following in his footsteps.",
     reviews: [americanHistoryXReview1]
+})
+
+const theTexasChainsawMassacre = new Movie ({
+    title: 'The Texas Chainsaw Massacre',
+    description: "Five friends run into Leatherface and his deadly clan.",
+    reviews: [theTexasChainsawMassacreReview1]
 })
 
 const theTown = new Movie({
@@ -54,5 +70,6 @@ Movie.remove({})
     .then(() => titanic.save())
     .then(() => theTown.save())
     .then(() => americanHistoryX.save())
+    .then(() => theTexasChainsawMassacre.save())
     .then(() => console.log('Movie Saved'))
     .then(() => mongoose.connection.close())
