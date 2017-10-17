@@ -17,9 +17,6 @@ const ScreenshotImg = styled.img`
        float: right;
 `   
 
-const SecondImg = styled.img`
-    float: bottom;
-`
 
 class ReviewPage extends Component {
     state={
@@ -57,7 +54,6 @@ class ReviewPage extends Component {
                  <ReviewDiv>
                  <ScreenshotImg src={review.screenshot}/>
                  <p class="review">{review.review}</p>
-                 <SecondImg src={review.second}/>
                  </ReviewDiv>
                  
 
