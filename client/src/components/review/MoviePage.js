@@ -8,7 +8,7 @@ const FlexContainer = styled.div`
     justify-content: space-around;
 
     img {
-        height: 300px;
+        height: 400px;
         float: bottom;
     }
 `
