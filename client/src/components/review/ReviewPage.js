@@ -42,6 +42,9 @@ class ReviewPage extends Component {
                 <div key={review._id}>
                  <h4>{review.tagline}</h4>
                  <img src={review.poster}/>
+                 <div>
+                     <a href={review.purchase}>Click here to Rent or Purchase</a>
+                 </div>
                  </div>
                  <ReviewDiv>
                  <p class="review">{review.review}</p>

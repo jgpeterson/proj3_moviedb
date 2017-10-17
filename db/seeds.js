@@ -16,14 +16,14 @@ const titanicReview1 = new Review({
     title: 'Titanic movie review',
     tagline: 'Nothing On Earth Could Come Between Them.',
     poster: 'https://i.imgur.com/Ug53wZq.jpg',
-    review: 'The role of Leonardo Dicaprios career.'
+    review: "Movies like this are not merely difficult to make at all, but almost impossible to make well. The technical difficulties are so daunting that it's a wonder when the filmmakers are also able to bring the drama and history into proportion. I found myself convinced by both the story and the saga. The setup of the love story is fairly routine, but the payoff--how everyone behaves as the ship is sinking--is wonderfully written, as passengers are forced to make impossible choices. Even the villain, played by Zane, reveals a human element at a crucial moment (despite everything, damn it all, he does love the girl). The image from the Titanic that has haunted me, ever since I first read the story of the great ship, involves the moments right after it sank. The night sea was quiet enough so that cries for help carried easily across the water to the lifeboats, which drew prudently away. Still dressed up in the latest fashions, hundreds froze and drowned. What an extraordinary position to find yourself in after spending all that money for a ticket on an unsinkable ship."
 })
 
 const theTexasChainsawMassacreReview1 = new Review ({
     title: 'The Texas Chainsaw Massacre',
     tagline: "What you know about fear doesnt come close to this.",
     poster: "https://i.imgur.com/dMeIjLx.jpg",
-    review: 'This movie changed my life.'
+    review: "The 2003 TCM is slick. Crafted by big-budget music-video maker Marcus Nispel and produced by blockbuster action director Michael Bay (Armageddon, The Rock), it has every bit of the visual flair those names suggest. The stars, from lead Jessica Biel (best known for TV’s “Seventh Heaven”) on down, are charismatic. Though not a big-budget film by today’s standards, there are plenty of greenbacks to be seen in the effects. And yet, this new TCM captures the spirit of the original, and exceeds it in more ways than just budget. At its best, it is a gritty, dirty, bloody film filled with suspense and its share of scares. At its worst, it is a gritty, dirty, bloody film filled with suspense and its share of scares that isn’t Hooper’s original. This is an outstanding horror movie, one of the best of recent years. Put aside your preconceived notions and appreciate this version of TCM for what it is: a terrific film."
 
 })
 
@@ -31,7 +31,8 @@ const theTownReview1 = new Review({
     title: 'The Town movie review',
     tagline: 'Welcome To The Bank Robbery Capital Of America.',
     poster: 'https://i.imgur.com/Ebu87Lz.jpg',
-    review: 'Ben Affleck and Jeremy Renner turn in the role of a lifetime.'
+    purchase: 'https://www.amazon.com/Town-Ben-Affleck/dp/B002ZG99N6/ref=sr_1_2?ie=UTF8&qid=1508257696&sr=8-2&keywords=the+town',
+    review: "If a film can bring us to this point and make us feel anxiety, it has done something right. 'The Town', Affleck's second film as a director, wants to do something more, to make a biographical and even philosophical statement about the culture of crime, but it doesn't do that as successfully. Here is a well-made crime procedural, and audiences are likely to enjoy it at that level, but perhaps the mechanics of movie crime got in the way of Affleck's higher ambitions. 'The Town' shows, as his first film 'Gone Baby Gone' (2007) did, that Affleck has the stuff of a real director. Everything is here. It's an effective thriller, he works closely with actors, he has a feel for pacing. Yet I persist in finding chases and gun battles curiously boring. I realize the characters have stopped making the decisions, and the stunt and effects artists have taken over."
 })
 
 const titanic = new Movie({
