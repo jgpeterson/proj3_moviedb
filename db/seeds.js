@@ -35,24 +35,24 @@ const theTownReview1 = new Review({
 })
 
 const titanic = new Movie({
-  title: 'Titanic',
+  title: 'https://i.imgur.com/Ug53wZq.jpg',
   description: "Two passengers fall in love on the ill fated ship.",
   reviews: [titanicReview1]
 })
 const americanHistoryX = new Movie({
-  title: 'American History X',
+  title: 'https://i.imgur.com/piCxWTp.jpg',
   description: "An older brother tries to stop his younger brother from following in his footsteps.",
     reviews: [americanHistoryXReview1]
 })
 
 const theTexasChainsawMassacre = new Movie ({
-    title: 'The Texas Chainsaw Massacre',
+    title: 'https://i.imgur.com/dMeIjLx.jpg',
     description: "Five friends run into Leatherface and his deadly clan.",
     reviews: [theTexasChainsawMassacreReview1]
 })
 
 const theTown = new Movie({
-    title: 'The Town',
+    title: 'https://i.imgur.com/Ebu87Lz.jpg',
     description: "Doug MacRay leads a gang of bank robbers in Boston.",
     poster: "https://i.imgur.com/Ebu87Lz.jpg",
     reviews: [theTownReview1]

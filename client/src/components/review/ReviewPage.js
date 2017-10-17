@@ -26,11 +26,10 @@ class ReviewPage extends Component {
     render() {
         return (
             <div>
-              <h1>{this.state.movie.title}'s Movie Review'</h1> 
+              <h1>{this.state.movie.title}</h1> 
               {this.state.movie.reviews.map((review) => {
             return (
                 <div key={review._id}>
-                 <h3>{review.title}</h3>
                  <h4>{review.tagline}</h4>
                  <img src={review.poster}/>
                  <p>{review.review}</p>
