@@ -38,7 +38,7 @@ class UserPage extends Component {
                    return (
                     <div class="username">
                         <Link to={`/user/${user._id}`}>{user.userName}</Link>
-                        <button onClick={() => this.deleteUser(user._id)}>DeleteUser</button>
+                        <button onClick={() => this.deleteUser(user._id)}>Delete User</button>
                         
                     </div>
                

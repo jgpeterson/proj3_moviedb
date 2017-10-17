@@ -6,6 +6,8 @@ const reviewSchema = mongoose.Schema({
     tagline: String, 
     poster: String,
     purchase: String,
+    screenshot: String,
+    second: String,
     review: String
 })
 

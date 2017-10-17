@@ -13,6 +13,14 @@ const ReviewDiv =styled.div `
     font-size: 20px;
 `
 
+const ScreenshotImg = styled.img`
+       float: right;
+`   
+
+const SecondImg = styled.img`
+    float: bottom;
+`
+
 class ReviewPage extends Component {
     state={
         movie: {
@@ -47,8 +55,12 @@ class ReviewPage extends Component {
                  </div>
                  </div>
                  <ReviewDiv>
+                 <ScreenshotImg src={review.screenshot}/>
                  <p class="review">{review.review}</p>
-              </ReviewDiv>
+                 <SecondImg src={review.second}/>
+                 </ReviewDiv>
+                 
+
               </FlexContainer>
             )
             })}
