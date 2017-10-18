@@ -47,13 +47,13 @@ class ReviewPage extends Component {
                  <h4>{review.tagline}</h4>
                  <img src={review.poster}/>
                  <div>
-                     <a href={review.purchase}>Click here to Rent or Purchase</a>
-                     <iframe src={review.trailer}/>
+                <iframe src={review.trailer}/>
                  </div>
                  </div>
                  <ReviewDiv>
                  <ScreenshotImg src={review.screenshot}/>
                  <p class="review">{review.review}</p>
+                 <a href={review.purchase}>Click here to Rent or Purchase this Title</a>
                  </ReviewDiv>
                  
 
