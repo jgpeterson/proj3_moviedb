@@ -45,4 +45,27 @@ body {
     color: white;
   }
 
+  .nav-trigger {
+    display: none;
+  }
+
+@media screen and (max-width: 480px) {
+  .nav-trigger {
+    display: block;
+  }
+
+  div.item {
+    display: none;
+  }
+
+  div.item { 
+    float: none;
+    border-bottom: 2px solid #d5dce4;
+  
+  div.item:last-child {
+    border-bottom: none;
+  }
+
+  }
+}
 

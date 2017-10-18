@@ -9,14 +9,13 @@ import './App.css';
 import styled from 'styled-components'
 
 
-
 class App extends Component {
   render() {
     return (
-     
       <Router>
         <div>
         <div class="container">
+        <span class="nav-trigger">NAV</span>
         <div class="item">
           <Link to="/">Home</Link>
         </div>
