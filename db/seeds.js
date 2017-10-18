@@ -18,7 +18,7 @@ const americanHistoryXReview1 = new Review({
 const titanicReview1 = new Review({
     title: 'Titanic movie review',
     tagline: 'Nothing On Earth Could Come Between Them.',
-    poster: 'https://i.imgur.com/Ug53wZq.jpg',
+    poster: 'https://i.imgur.com/37VDeif.jpg',
     purchase: "https://www.amazon.com/Titanic-Leonardo-DiCaprio/dp/B007SPPANM/ref=sr_1_2?s=movies-tv&ie=UTF8&qid=1508261932&sr=1-2&keywords=titanic+1997",
     trailer: "https://www.youtube.com/embed/2e-eXJ6HgkQ",
     screenshot: "https://i.imgur.com/Nyffr5H.jpg",
@@ -28,7 +28,7 @@ const titanicReview1 = new Review({
 const theTexasChainsawMassacreReview1 = new Review ({
     title: 'The Texas Chainsaw Massacre',
     tagline: "What you know about fear doesnt come close to this.",
-    poster: "https://i.imgur.com/dMeIjLx.jpg",
+    poster: "https://i.imgur.com/RIcAqwd.jpg?1",
     purchase: "https://www.amazon.com/Texas-Chainsaw-Massacre-Blu-ray/dp/B0029O0BMC/ref=sr_1_2?s=movies-tv&ie=UTF8&qid=1508261901&sr=1-2&keywords=the+texas+chainsaw+massacre+2003",
     trailer: "https://www.youtube.com/embed/janre4HxsX4",
     screenshot: "https://i.imgur.com/WDWUsBd.jpg",
@@ -39,7 +39,7 @@ const theTexasChainsawMassacreReview1 = new Review ({
 const theTownReview1 = new Review({
     title: 'The Town movie review',
     tagline: 'Welcome To The Bank Robbery Capital Of America.',
-    poster: 'https://i.imgur.com/Ebu87Lz.jpg',
+    poster: 'https://i.imgur.com/ZAr6MJk.jpg',
     purchase: 'https://www.amazon.com/Town-Ben-Affleck/dp/B002ZG99N6/ref=sr_1_2?ie=UTF8&qid=1508257696&sr=8-2&keywords=the+town',
     trailer: "https://www.youtube.com/embed/WcXt9aUMbBk",
     screenshot: "https://i.imgur.com/5jIkcJK.jpg",
