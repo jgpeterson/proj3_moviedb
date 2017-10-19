@@ -18,6 +18,16 @@ https://trello.com/b/yiJcPLLM/project3moviedb
 https://i.imgur.com/LWdsd1b.jpg
 https://i.imgur.com/aeDWmqp.jpg
 
+
+LINKS USED FOR REVIEWS:
+https://www.cinemablend.com/reviews/American-History-X-369.html
+http://www.rogerebert.com/reviews/the-town-2010
+https://www.horrortalk.com/reviews/movie-reviews/95-the-texas-chainsaw-massacre-2003.html
+http://www.rogerebert.com/reviews/titanic-1997
+
+LINK USED FOR MAKING HOME PAGE LOGO
+https://www.befunky.com/create/text-editor/
+
 FUTURE DEVELOPMENT:
 
-I would love to make my website responsive mobile friendly. I tried for several hours the day before presentations to get it right and working and I failed about halfway through. That will definitely be a goal to come back and reach once the course ends so that I can have one site in my portfolio that is mobile friendly. I will say that I feel far far better at the end of this project than I did at the beginning of this project. Having the annotations and stuff that Danny and Jamie wrote in while working and building really really helped me understand how react works. It is still abit tedious and complicated but I do feel far better at reading and understanding it as well as using it than I did the day they introduced it.
+I would love to make my website responsive mobile friendly. I tried for several hours the day before presentations to get it right and working and I failed about halfway through. That will definitely be a goal to come back and reach once the course ends so that I can have one site in my portfolio that is mobile friendly. I will say that I feel far far better at the end of this project than I did at the beginning of this project. Having the annotations and stuff that Danny and Jamie wrote in while working and building really really helped me understand how react works. It is still a bit tedious and complicated but I do feel far better at reading and understanding it as well as using it than I did the day they introduced it.
