@@ -14,8 +14,8 @@ const FlexContainer = styled.div`
 
     @media screen and (max-width:450px) {
         .poster img {
-            max-width: 300px;
-            height: 150px;
+            max-width: 75px;
+            height: 75px;
             margin: 10px;
             display: flex;
             flex-direction: column;
