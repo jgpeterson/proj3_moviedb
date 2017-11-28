@@ -15,19 +15,21 @@ padding: 40px;
         margin-left: 110%;
         padding: 50%;
     }
-
+}
+    @media screen and (max-width:450px) {
     .review {
         padding: 0%;
     }
-
+}
+@media screen and (max-width:450px) {
     .trailer {
     }
-
+}
+    @media screen and (max-width:450px) {
     .hide img:first-child {
         display:none;
     }
-
-
+}
 `
 const ReviewDiv =styled.div `
     margin-left: 300px;

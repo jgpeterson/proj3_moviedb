@@ -8,10 +8,24 @@ import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components'
 
-
+const Head = styled.div`
+@media screen and (max-width:450px) {
+    .container {
+        font-size: 1rem;
+        margin-right: 30%;
+    
+    }
+    .item {
+        font-size: 25px;
+        margin: 30px;
+        margin-left: -12%;
+    }
+   }
+`
 class App extends Component {
   render() {
     return (
+      <Head>
       <Router>
         <div>
         <div class="container">
@@ -33,6 +47,7 @@ class App extends Component {
         </Switch>
         </div>
         </Router>
+        </Head>
     );
   }
 }

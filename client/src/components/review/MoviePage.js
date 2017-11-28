@@ -11,16 +11,14 @@ const FlexContainer = styled.div`
         height: 400px;
         float: bottom;
     }
-    `
-const Back = styled.div`
+
     @media screen and (max-width:450px) {
         .poster img {
-            width: 150px;
+            max-width: 300px;
             height: 150px;
-            margin: 20px;
+            margin: 10px;
             display: flex;
             flex-direction: column;
-            align-items: left;
         }
        }
 `
@@ -50,11 +48,9 @@ componentWillMount(){
                 {<h1>{this.state.movie.title}</h1>}
          
         <FlexContainer>
-        <Back>
         {this.state.movie.map((movie) => {
          return (<div class="poster"><Link key={movie._id} to={`/movies/${movie._id}/review`}><img src={movie.title}/></Link></div>)
             })}
-        </Back>
         </FlexContainer>
         </div>
             )
