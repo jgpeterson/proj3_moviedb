@@ -7,6 +7,9 @@ display: flex;
 justify-content: space-around;
 padding: 150px;
 float: center;
+
+
+
 `
 
 

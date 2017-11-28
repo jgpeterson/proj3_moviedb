@@ -8,15 +8,48 @@ const FlexContainer = styled.div`
 display: flex;
 justify-content: space-around;
 padding: 40px;
+
+@media screen and (max-width:450px) {
+    img {
+        max-width: 200px;
+        margin-left: 110%;
+        padding: 50%;
+    }
+
+    .review {
+        padding: 0%;
+    }
+
+    .trailer {
+    }
+
+    .hide img:first-child {
+        display:none;
+    }
+
+
 `
 const ReviewDiv =styled.div `
     margin-left: 300px;
     font-weight: bolder;
     font-size: 20px;
+
+    @media screen and (max-width:450px) {
+         {
+            
+            margin-left: -200%;
+            padding: 50%;
+        }
 `
 
 const ScreenshotImg = styled.img`
        float: right;
+
+       @media screen and (max-width:450px) {
+        {
+           margin-left: -
+          float:bottom;
+       }
 `   
 class ReviewPage extends Component {
     state={
@@ -45,8 +78,8 @@ class ReviewPage extends Component {
                 <FlexContainer>
                 <div key={review._id}>
                  <h4>{review.tagline}</h4>
-                 <img src={review.poster}/>
-                 <div>
+                <div class="hide"><img src={review.poster}/></div>
+                 <div class="trailer">
                 <iframe src={review.trailer}/>
                  </div>
                  </div>
