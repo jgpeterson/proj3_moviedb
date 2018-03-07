@@ -2,7 +2,7 @@ body {
   margin: 50px;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("https://i.imgur.com/p1RBjra.jpg");
+  background-image: url("https://i.imgur.com/0bkrVTA.jpg");
   color: white;
 }
 
@@ -35,6 +35,11 @@ body {
   align-items: center;
 
 
+}
+
+.banner {
+
+  padding: -200px;
 }
   .item {
     display: flex;

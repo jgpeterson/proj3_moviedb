@@ -3,10 +3,8 @@ import styled from 'styled-components'
 
 
 const FlexContainer = styled.div`
-display: flex;
-justify-content: space-around;
-padding: 150px;
-float: center;
+
+padding: -200%;
 
 @media screen and (max-width:450px) {
     .banner img {
@@ -26,8 +24,8 @@ class UserPage extends Component {
         return (
 
             <FlexContainer>
-            <div class="banner">
-                <img src="https://i.imgur.com/zkSEnuE.jpg"/> 
+            <div>
+                <img src="https://i.imgur.com/sNIqg6F.jpg"/> 
             </div>
             </FlexContainer>
         );
